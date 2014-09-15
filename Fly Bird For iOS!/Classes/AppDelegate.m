@@ -9,7 +9,6 @@
 
 #import "AppDelegate.h"
 #import "IntroScene.h"
-#import "HelloWorldScene.h"
 
 @implementation AppDelegate
 
@@ -24,23 +23,21 @@
 	// If you want more flexibility, you can configure Cocos2D yourself instead of calling setupCocos2dWithOptions:.
 	[self setupCocos2dWithOptions:@{
 		// Show the FPS and draw call label.
-		CCSetupShowDebugStats: @(YES),
-		
+		//CCSetupShowDebugStats: @(YES),
 		// More examples of options you might want to fiddle with:
 		// (See CCAppDelegate.h for more information)
-		
 		// Use a 16 bit color buffer: 
-//		CCSetupPixelFormat: kEAGLColorFormatRGB565,
+        //CCSetupPixelFormat: kEAGLColorFormatRGB565,
 		// Use a simplified coordinate system that is shared across devices.
-//		CCSetupScreenMode: CCScreenModeFixed,
+        //CCSetupScreenMode: CCScreenModeFixed,
 		// Run in portrait mode.
-//		CCSetupScreenOrientation: CCScreenOrientationPortrait,
+        CCSetupScreenOrientation: CCScreenOrientationPortrait,
 		// Run at a reduced framerate.
-//		CCSetupAnimationInterval: @(1.0/30.0),
+        //CCSetupAnimationInterval: @(1.0/30.0),
 		// Run the fixed timestep extra fast.
-//		CCSetupFixedUpdateInterval: @(1.0/180.0),
+        //CCSetupFixedUpdateInterval: @(1.0/180.0),
 		// Make iPad's act like they run at a 2x content scale. (iPad retina 4x)
-//		CCSetupTabletScale2X: @(YES),
+        //CCSetupTabletScale2X: @(YES),
 	}];
 	
 	return YES;
